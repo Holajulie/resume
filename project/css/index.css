@@ -192,6 +192,7 @@ header >.container-fluid{
 	height:5.5em;
 	position: relative;
 	padding-top: 4em;
+	margin-bottom: 1em;
 	}
 .job p{
 	font-size:.25em;
@@ -211,7 +212,8 @@ header >.container-fluid{
 .education{
 	width:100%;
 	height: auto;
-	margin-top: 1em;
+	padding-top: 4em;
+	margin-top: -4em;
 	}
 .education h2{
 	font-size: .25em;
@@ -227,6 +229,8 @@ header >.container-fluid{
 .skill{
 	width:100%;
 	margin-bottom: 1em;
+	padding-top: 4em;
+	margin-top: -4em;
 	}
 .skill li{
 	font-size: .2em;
@@ -240,6 +244,8 @@ header >.container-fluid{
 .project{
 	width:100%;
 	margin-bottom: 1em;
+	padding-top: 4em;
+	margin-top: -4em;
 	}
 
 .project p,li{
@@ -254,6 +260,8 @@ header >.container-fluid{
 .school{
 	width:100%;
 	margin-bottom: 1em;
+	padding-top: 4em;
+	margin-top: -4em;
 	}
 
 .school p,li{
@@ -268,6 +276,8 @@ header >.container-fluid{
 .internship{
 	width:100%;
 	margin-bottom: 1em;
+	padding-top: 4em;
+	margin-top: -4em;
 	}
 
 .internship p,li{
