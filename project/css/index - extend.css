@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+/*初始化*/
+html{
+		width:100%;
+		color:#9B9996;
+	}
+body{
+	width:90%;
+	margin:0 auto;
+	}
+*{
+	margin: 0; /*外边距*/
+	padding: 0;
+	font-family: Microsoft YaHei UI;
+	}
+a{
+	text-decoration:none; /*取消超链接的下划线*/	
+	}
+a:hover{
+	text-decoration:none;
+}
+h2{
+	font-size: .25em;
+	font-family:Microsoft YaHei Light;
+	text-align: left;
+	color:#D4BA38;
+	margin-left:1em;
+	margin-bottom: 1em;
+	}
+p{
+	color:#9B9996;
+	font-size:.2em;
+	text-align:left;
+	margin-left:1.8em;
+	margin-right: 1.8em;
+	}
+li{
+	color:#9B9996;
+	font-size:.2em;
+	text-align:left;
+	margin-left:3em;
+	margin-right: 3em;
+}
+
+ul{
+	margin-bottom: .6em;
+}
+
+/*header布局*/
+header{
+	 	width:100%;
+		height:4em;	
+		/*position:fixed;*/
+		z-index:1000;
+	}
+	
+/*设置头部*/
+header >.container-fluid{
+		height:2.5em;
+		background:#D4BA38;
+		width:100%;
+		position:relative;
+		
+	}
+	
+.container-fluid >img{
+	width:2em;
+	height:2.8em;
+	position:absolute;
+	right:5%;
+	top:35%;
+	border:6px #FCFCFC solid;
+	}
+
+.container-fluid >h1{
+	font-family:Microsoft YaHei Light;
+	color:#fff;
+	font-size:.7em;
+	padding-top: .2em;
+	height: 1em;
+	line-height: 1em;
+	margin-bottom:0.4em;
+	}
+	
+.container-fluid >p{
+	letter-spacing:.05em;
+	color:#fff;
+	font-size:.25em;
+	line-height: 1.5em;
+	height: 1.5em;
+	padding-left:3.5em;
+	padding-top: 1em;
+	margin-bottom: .4em;
+	}
+/*菜单*/
+.menu{
+	width:80%;
+	height:1em;
+	background-color:#fff;
+	position:relative;
+	}
+.menu >nav{
+	width: 70%;
+	height:1em;
+	position: absolute;
+	background-color:#fff;
+	padding-left: 0.3em;
+	}
+.menu >nav >a{
+	color:#9B9996;
+	font-size:.2em;
+	margin-bottom:1em;
+	display:block;
+	float: left;
+	border-right: 1px solid #9B9996;
+	padding:0 5px;
+	margin-top: 7px;
+	}
+.menu >nav>span{
+	font-size:.2em;
+	color:#9B9996;
+	}
+/*鼠标响应，注意语法写对*/
+.menu >nav >a:hover,
+.menu >nav >a.active{
+		color:#D4BA38;
+	}
+	
+/*制作分隔图形*/
+.separete{
+	width:100%;
+	height:1.5em;
+	}
+.shap{
+	width:1.8em;
+	height:0.8em;
+	background-color:#D4BA38;
+	position:relative;
+	margin:0;
+	}
+.shap::after{
+	content:"";
+	color:#D4BA38;
+	display:block;
+	position:absolute;
+	border-left:0 solid transparent;
+    border-bottom:0.8em solid;
+    border-right:0.8em solid transparent;
+	margin-left:1.8em;
+	top:0;
+	}
+.shap >h1{
+	font-size:0.35em;
+	color:#fff;
+	display:block;
+	margin-left:1em;
+	padding-top: .5em;
+	}	
+.line{
+	width:75%;
+	height:0.2em;
+	float:left;
+	background-color:#E8E3EE;
+	margin-left:2.65em;
+	position:relative;
+	-webkit-transform: translateY(-0.2em);
+	}
+.line::before{
+	content:"";
+	color:#E8E3Ee;
+	display:block;
+	position:absolute;
+	border-left:0.2em solid transparent;
+    border-top:0.2em solid;
+    border-right:0 solid transparent;
+	margin-left:2.3em;
+	top:0;
+	left:-2.5em;
+	}	
+/*求职意向*/
+.job{
+	/*padding-top:300px;*/
+	width:100%;
+	height:2em;
+	position: relative;
+	}
+.job p{
+	font-size:.25em;
+	margin-top:1em;
+	padding-left: 1em;
+	}
+.job img{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left:.4em;
+	opacity: 0.4;
+	top:1.11em;
+}
+
+/*教育背景布局*/
+.education{
+	width:100%;
+	}
+.education h2{
+	font-size: .25em;
+	margin-top: 1em;
+	margin-bottom: .8em;
+	padding-left: .2em;
+}
+.education p{
+	line-height: 1.7em;
+}
+
+/*职业技能布局*/
+.skill{
+	width:100%;
+	margin-bottom: 1em;
+	}
+.skill li{
+	font-size: .2em;
+	margin-top: 1em;
+	height: 1em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+/*项目经验布局*/
+.project{
+	width:100%;
+	margin-bottom: 1em;
+	}
+
+.project p,li{
+	font-size: .2em;
+	margin-top: 1em;
+	height: 1em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+/*在校经历布局*/
+.school{
+	width:100%;
+	margin-bottom: 1em;
+	}
+
+.school p,li{
+	font-size: .2em;
+	margin-top: 1em;
+	height: 1em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+/*实习经历布局*/
+.internship{
+	width:100%;
+	margin-bottom: 1em;
+	}
+
+.internship p,li{
+	font-size: .2em;
+	margin-top: 1em;
+	height: 1em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+.self_assiment{
+	width:100%;
+	margin-bottom: 1em;
+	}
+
+.self_assiment p{
+	font-size: .2em;
+	margin-top: 1em;
+	height: 1em;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+/*设置尾部*/
+footer >.container-fluid{
+		height:.5em;
+		background:#D4BA38;
+		width:100%;
+		position:relative;
+		
+	}
+footer >.container-fluid >a{
+	width: 100%;
+	font-size: .3em;
+	color: #fff;
+	position: absolute;
+	top:.05em;
+	text-align: center;
+}
+footer >.container-fluid >a:hover{
+	opacity: 0.5;	
+}
