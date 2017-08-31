@@ -1,57 +1,59 @@
 @charset "utf-8";
 
-/*初始化*/
+/*@初始化*/
+
+
 html{
 		width:100%;
-		color:#9B9996;
 	}
 body{
 	width:90%;
 	margin:0 auto;
+	color:#9B9996;
 	}
 *{
-	margin: 0; /*外边距*/
+	margin: 0; 
 	padding: 0;
 	font-family: Microsoft YaHei UI;
 	}
-a{
-	text-decoration:none; /*取消超链接的下划线*/	
-	}
-a:hover{
-	text-decoration:none;
+section{
+	width:100%;
+	margin-bottom: 1em;
 }
+a,a:hover{
+	text-decoration:none; 
+	}
 h2{
 	font-size: .25em;
 	font-family:Microsoft YaHei Light;
 	text-align: left;
 	color:#D4BA38;
-	margin-left:1em;
-	font-size: .25em;
-	margin-top: 1em;
-	margin-bottom: .8em;
 	padding-left: .2em;
+	margin:1em 0 .8em 1em; 
 	}
-p{
-	color:#9B9996;
+p,li{
 	font-size:.2em;
 	text-align:left;
-	margin-left:1.8em;
-	margin-right: 1.8em;
+	line-height: 1em;
+	height:1em;
+	padding-right: .5em;
+}
+p{	
+	margin:.5em auto .8em 1.8em;
 	}
 li{
-	color:#9B9996;
-	font-size:.2em;
-	text-align:left;
-	margin-left:3em;
-	margin-right: 3em;
+	margin:1em 3em;	
 }
 
 ul{
 	margin-bottom: .6em;
 }
 
-
-/*header布局*/
+.container-fluid{
+	background:#D4BA38;
+	width:100%;
+}
+/*@header布局*/
 header{
 	 	width:90%;
 		height:4em;	
@@ -63,8 +65,6 @@ header{
 /*设置头部*/
 header >.container-fluid{
 		height:2.5em;
-		background:#D4BA38;
-		width:100%;
 		position:relative;
 	}
 	
@@ -76,7 +76,6 @@ header >.container-fluid{
 	top:35%;
 	border:6px #FCFCFC solid;
 	z-index: 2;
-	color: #
 	}
 
 .container-fluid >h1{
@@ -99,42 +98,28 @@ header >.container-fluid{
 	padding-top: 1em;
 	margin-bottom: .4em;
 	}
-/*菜单*/
+/*@菜单*/
 .menu{
 	width:100%;
-	height:.5em;
-	background-color:#fff;
-	position:relative;
-	z-index: 1;
-	}
-.menu >nav{
-	width: 100%;
 	height:1em;
-	position: absolute;
 	background-color:#fff;
 	padding-left: 0.3em;
-	}
-.menu >nav >a{
+	z-index: 1;
+}
+.menu >a{
 	color:#9B9996;
 	font-size:.2em;
-	margin-bottom:1em;
 	display:block;
 	float: left;
 	border-right: 1px solid #9B9996;
 	padding:0 5px;
-	margin-top: 7px;
+	margin:7px 0 1em;
 	}
-.menu >nav>span{
-	font-size:.2em;
-	color:#9B9996;
-	}
-/*鼠标响应，注意语法写对*/
-.menu >nav >a:hover,
-.menu >nav >a.active{
+.menu >a:hover,.menu >a.active{
 		color:#D4BA38;
 	}
 	
-/*制作分隔图形*/
+/*@制作分隔图形*/
 .separete{
 	width:100%;
 	height:1.5em;
@@ -185,17 +170,15 @@ header >.container-fluid{
 	top:0;
 	left:-2.5em;
 	}	
-/*求职意向*/
+/*@求职意向*/
 .job{
 	/*padding-top:300px;*/
-	width:100%;
 	height:5.5em;
 	position: relative;
 	padding-top: 4em;
-	margin-bottom: 1em;
 	}
 .job p{
-	font-size:.25em;
+	font-size: .25em;
 	margin-top:1em;
 	padding-left: 1em;
 	}
@@ -205,109 +188,51 @@ header >.container-fluid{
 	position: absolute;
 	left:.4em;
 	opacity: 0.4;
-	bottom: .13em;
+	bottom: .2em;
 }
 
-/*教育背景布局*/
+/*@教育背景布局*/
 .education{
-	width:100%;
-	height: auto;
 	padding-top: 4em;
 	margin-top: -4em;
+	margin-bottom: 1.5em;
 	}
-.education h2{
-	font-size: .25em;
-	margin-top: 1em;
-	margin-bottom: .8em;
-	padding-left: .2em;
-}
 .education p{
 	line-height: 1.7em;
 }
 
-/*职业技能布局*/
+/*@职业技能布局*/
 .skill{
-	width:100%;
-	margin-bottom: 1em;
 	padding-top: 4em;
 	margin-top: -4em;
 	}
-.skill li{
-	font-size: .2em;
-	margin-top: 1em;
-	height: 1em;
-	line-height: 1em;
-	margin-bottom: 1em;
-}
 
-/*项目经验布局*/
+/*@项目经验布局*/
 .project{
-	width:100%;
-	margin-bottom: 1em;
 	padding-top: 4em;
 	margin-top: -4em;
-	}
+	}	
 
-.project p,li{
-	font-size: .2em;
-	margin-top: 1em;
-	height: 1em;
-	line-height: 1em;
-	margin-bottom: 1em;
-}
-
-/*在校经历布局*/
+/*@在校经历布局*/
 .school{
-	width:100%;
-	margin-bottom: 1em;
 	padding-top: 4em;
 	margin-top: -4em;
 	}
 
-.school p,li{
-	font-size: .2em;
-	margin-top: 1em;
-	height: 1em;
-	line-height: 1em;
-	margin-bottom: 1em;
-}
-
-/*实习经历布局*/
+/*@实习经历布局*/
 .internship{
-	width:100%;
-	margin-bottom: 1em;
 	padding-top: 4em;
 	margin-top: -4em;
 	}
-
-.internship p,li{
-	font-size: .2em;
-	margin-top: 1em;
-	height: 1em;
-	line-height: 1em;
-	margin-bottom: 1em;
-}
-
-.self_assiment{
-	width:100%;
-	margin-bottom: 1em;
-	}
-
+/*@自我评价布局*/
 .self_assiment p{
-	font-size: .2em;
 	margin-top: 1em;
-	height: 1em;
-	line-height: 1em;
-	margin-bottom: 1em;
 }
 
 /*设置尾部*/
 footer >.container-fluid{
 		height:.5em;
-		background:#D4BA38;
-		width:100%;
 		position:relative;
-		
 	}
 footer >.container-fluid >a{
 	width: 100%;
