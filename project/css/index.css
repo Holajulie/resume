@@ -101,7 +101,7 @@ header >.container-fluid{
 	padding-left: 0.3em;
 	z-index: 1;
 }
-.menu >a{
+.menu >nav>a{
 	color:#9B9996;
 	font-size:.2em;
 	display:block;
@@ -110,7 +110,7 @@ header >.container-fluid{
 	padding:0 5px;
 	margin:7px 0 1em;
 	}
-.menu >a:hover,.menu >a.active{
+.menu > nav >a:hover,.menu > nav >a.active{
 		color:#D4BA38;
 	}
 	
